@@ -1,0 +1,68 @@
+/* -- Corps de la page -- */
+main {
+    display: flex;
+    justify-content: center; /*Aligne au centre (horizontal)*/
+    align-items: center; /*Aligne au centre (vertical)*/
+    height: 100vh;
+    margin:20px;
+    
+}
+
+main div {
+    display: none; /*Volet en invisible (sera affiché selon les conditions) par défaut le volet1 sera affiché à l'ouverture de la page*/
+    padding: 20px; /*Padding de 20px autour du volet (lisibilité)*/
+    background-color: white; /*Arrière plan gris --> blanc*/
+    border: 5px solid #898989; /*Bordure de 5px, ligne continue, en gris*/
+    min-width: 50%; /*Le volet prends minimum 50% du main*/
+}
+
+main h2 {
+    font-size: 24px; /*Change la taille du h2 à 24px*/
+    margin-bottom: 20px; /*Marge de 20px en dessous du titre*/
+}
+
+main form { /*Met les éléments à l'intérieur du formulaire en colonne*/
+    display: flex;
+    flex-direction: column;
+}
+
+main label, main input { /*Une marge de 10px en dessous du label/input */
+    margin-bottom: 10px;
+}
+
+main input { /*Padding de 10px autur du input (lisibilité)*/
+    padding: 10px;
+}
+
+label[for^="vole"] {
+    margin-bottom: 10px; /*Une marge de 10px en dessous du lien*/
+    color: rgb(255, 0, 0); /*Lien en rouge*/
+    text-decoration: underline; /*Lien surligné*/
+}
+
+label[for^="vole"]:hover { /*Lien actionnant les volets en gars quand survol*/
+    font-weight:bold;
+}
+
+input[type="radio"] { /*Cache le bouton "radio", celui qui permet de changer de volet*/
+    display: none; 
+}
+
+input[type="radio"]:checked + div { /*Si le volet du label "for="voletX"" actionné est le même que le "id="voletX"*/
+    display: block;
+}
+
+main button {
+    padding: 25px 20px; /* Padding 25px en horizontal 20px en vertical */
+    margin: 30px 0; /* Marge de 30px à l'horizontal*/
+    font-size: 16px; /* Ecriture de taille 16 à l'intérieur du bouton*/
+    cursor: pointer; /* Met le curseur comme si il clique sur quelque chose*/
+    border: none; /* Enlève la bordure solide */
+    border-style:double; /* Met en place la bordure double */
+    border-radius: 8px; /* Arrondi les pointes */
+}
+
+main button:hover {
+    background-color: #00b357; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}

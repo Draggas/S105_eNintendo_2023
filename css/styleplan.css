@@ -1,0 +1,39 @@
+header h1 {
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto 20%;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    color: #333;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+main ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+main a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+main a:hover {
+    text-decoration: underline;
+}

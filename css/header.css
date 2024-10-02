@@ -1,0 +1,55 @@
+body > header{
+    display: flex; /*Element en flex*/
+    justify-content: space-between; /*Element espacé (horizontal)*/
+    align-items: center; /*Element au milieu du header (verticale)*/
+    padding: 10px; /*Le padding est de 10px (éléments qui collent pas au bord)*/
+}
+
+body > header img{
+    max-width: 100%;
+    height: auto;
+    /*Ses 2 propriétés permettent à l'élément d'avoir la bonne taille à l'écran et de ne pas dépasser les autres éléments
+    elle permet aussi de corriger sa taille automatiquement selon la taille de l'écran*/
+    margin-right: 2em; /*Marge à droite de chaque image de 2em (taille relative)*/
+}
+
+/* -- Enlèvement puces et soulignement des balises a/ul -- */
+
+/* -- En-tête -- */
+
+body > header {
+    background: url('../img/header_fond.png') center/cover no-repeat; /*Fond "forêt", se centre sur l'image et couvre jusqu'aux bordures et ne se répète pas, image mise qu'une fois. */
+}
+
+body > header div {
+    display: flex; /*Element en flex pour que les éléments soit collés sur une ligne*/
+}
+
+body > header h1 {
+    font-size: 4em; /*Taille en 2em (valeur relative)*/
+    font-weight: bold; /*Mis en gras*/
+    color: rgb(20, 246, 28); /*Mis en vert clair*/
+    margin-right: 15%; /*Marge à droite de 15%*/
+    margin-left: 15%; /*Marge à gauche de 15%*/
+    
+}
+
+body > header button {
+    padding: 1.5em 0.6em; /*Augmente la taille du bouton en haut/bas et gauche/droite*/
+    font-size: 1.2em; /*Taille 1.2em (valeur relative)*/
+    background-color: #4CAF50; /*Arrière plan du bouton : vert*/
+    font-family: 'Pacifico', cursive; /*Forçage de l'écriture en Pacifico, qui ne prends pas la propriété font-family de body ?*/
+    border: none; /*Elle fait pas stylé la bordure*/
+    border-radius: 5px; /*Arrondi la bordure*/
+    color:white; /*couleur blanche*/
+    margin-left:0.7em;
+}
+
+body > header button:hover , body > header button:hover a{
+    background-color: #006400; /*Arrière plan qui devient foncé au survol*/
+    color: #000; /*Texte qui devient noir au survol*/
+}
+
+body > header a {
+    color:#fff; /*Couleur blanche auto pour les liens*/
+}

@@ -1,0 +1,14 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background:url("../img/body_fond.png") no-repeat center/cover;
+}
+body, h1, h2, h3, p, ul, li, button { /* Element mis avec un padding et margin à défaut de 0. Je sais pas certains éléments avait un padding défini donc autant que je les enlève */
+    margin: 0; 
+    padding: 0; 
+}
+ul {
+    list-style-type: none; /*Retire les puces*/
+}
+a {
+    text-decoration:none; /*Retire le souligné du lien*/
+}

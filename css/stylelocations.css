@@ -1,0 +1,45 @@
+/* -- Corps de la page -- */
+main {
+  max-width: 86%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #eeeeee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+ 
+section {
+  width: 90%;
+  margin: 20px;
+}
+  
+.locationsDetails {
+  display: flex;
+  align-items: center;
+}
+  
+.locationsDetails img {
+  width: 40%;
+  margin-right: 20px;
+}
+  
+.locationsDetails h2 {
+  margin-bottom: 10px;
+}
+  
+.locationsDetails div {
+  flex-grow: 1;
+}
+  
+.locationsDetails p {
+  margin: 5px 0;
+  font-size:140%;
+}
+
+.locationsDetails p:first-of-type{
+  margin-bottom:40px;
+}
+  
+.locationsDetails span {
+  font-weight: bold;
+}

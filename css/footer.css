@@ -1,0 +1,44 @@
+footer {
+    display: flex; /*Element en flex*/
+    justify-content: space-between; /*Element espacé (horizontal)*/
+    align-items: center; /*Element au milieu du header (verticale)*/
+    padding: 10px; /*Le padding est de 10px (éléments qui collent pas au bord)*/
+}
+footer img {
+    max-width: 100%;
+    height: auto;
+    /*Ses 2 propriétés permettent à l'élément d'avoir la bonne taille à l'écran et de ne pas dépasser les autres éléments
+    elle permet aussi de corriger sa taille automatiquement selon la taille de l'écran*/
+    margin-right: 2em; /*Marge à droite de chaque image de 2em (taille relative)*/
+}
+footer {
+    background-color: #373839; /*Fond Gris (classique d'un footer)*/
+}
+
+footer ul { /*comme pour le nav*/
+    display: flex;
+    justify-content: flex-start; 
+}
+
+footer ul li { /*Définit la taille et la marge à droite de chaque élément*/
+    margin-right: 1em;
+    font-size: 0.9em;
+}
+
+footer a:hover { /*Définit la couleur au survol*/
+    color: #4CAF50;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+body > footer a {
+    color:#fff; /*Couleur blanche auto pour les liens*/
+}

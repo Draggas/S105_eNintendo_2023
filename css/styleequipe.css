@@ -1,0 +1,40 @@
+/* -- Corps de la page -- */
+
+header h1 {
+    margin:auto 17.5%;
+}
+
+main {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+main h1 {
+    text-align: center;
+    color: #333;
+}
+
+main p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 5%;
+}
+
+main div {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main h2 {
+    color: #333;
+}

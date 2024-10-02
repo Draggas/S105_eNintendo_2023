@@ -1,0 +1,159 @@
+<!--Identification du document en html + balise d'ouverture HTML avec définition de langue en français-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--Informations sur la page-->
+<head>
+
+    <!--Encodage des caractères-->
+    <meta charset="UTF-8">
+
+    <!--Affichage d'une icône pour le favicon de la page du site-->
+    <link rel="icon" href="img/eNintendoFavicon.png">
+
+    <!--Liaison des feuilles de style pour la page web-->
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styleadhesion.css">
+    
+    <!--Titre de la page (Afficher à côté du favicon)-->
+    <title>eNintendo - Louer un véhicule</title>
+
+</head>
+
+<!--Corps de la page-->
+<body>
+
+    <!--En-tête de la page-->
+    <header>
+
+        <!--Affichage Logo eNintendo-->
+        <a href="index.html"><img src="img/headerfooter_eNintendo.png" alt="Logo eNintendo"></a>
+        
+        <!--Affichage du titre de la page-->
+        <h1 id="adhesionTitre">Adhésion</h1>
+
+        <!--Affichage des réseaux sociaux de eNintendo-->
+        <div>    
+            <a id="insta" href="https://www.instagram.com/econintendo/?hl=fr"><img src="img/header_instagram.png" alt="Logo Instagram"></a>
+            <a id="twitter" href="https://twitter.com/ecoMobileNintendo"><img src="img/header_twitter.png" alt="Logo Twitter"></a>
+            <a id="tiktok" href="https://www.tiktok.com/@eNintendo"><img src="img/header_tiktok.png" alt="Logo Tiktok"></a>
+            <a id="discord" href="https://discord.com/invite/enintendo"><img src="img/header_discord.png" alt="Logo Discord"></a>
+        </div>
+
+        <!--Affichage du bouton de connexion-->
+        <a href="compte.html"><button>Connexion</button></a>
+    </header>
+
+    <!--Menu de navigation de la page-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="locations.html">Locations disponible</a></li>
+            <li><a href="questionnaire.html">Questionnaire</a></li>
+            <li><a href="adhesion.html">Louer</a></li>
+            <li><a href="https://www.nintendo.fr/Societe/Rapport-de-Responsabilite-Sociale-d-Entreprise/Rapport-de-Responsabilite-Sociale-d-Entreprise-625944.html">RSE</a></li>
+            <li><a href="compte.html">Compte</a></li>
+            <li><a href="contacter.html">Contacter</a></li>
+        </ul>
+    </nav>
+
+    <!--Affichage principal de la page-->
+    <main id="adhesionMain">
+        <header>
+            <h2>ADHESION AU SERVICE</h2>
+            <p>Connectez-vous pour que votre adhésion soit plus rapide</p>
+        </header>
+
+        <form action="adhesion_valide.html" method="get">
+
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" placeholder="Insérer votre nom de famille" required>
+    
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" placeholder="Insérer votre prénom" required>
+    
+            <label for="metier">Métier :</label>
+            <input type="text" name="metier" placeholder="Insérer votre métier actuel dans Nintendo" required>
+    
+            <label for="dateNaissance">Date de naissance :</label>
+            <input type="date" name="dateNaissance" required>
+            
+            <label for="adresse">Adresse :</label>
+            <input type="text" name="adresse" placeholder="Insérer votre adresse" required>
+            
+            <label for="mail">Mail :</label>
+            <input type="email" name="mail" placeholder="Votre mail professionnel(id@nintendo.com ou autres)" required>
+    
+            <label for="service">Service demandé :</label>
+            <select name="service" required>
+                <option disabled selected>Choisissez un service</option>
+            
+                <optgroup label="Location de Vélo">
+                    <option value="veloW">Vélo - 1 semaine (4€)</option>
+                    <option value="veloM">Vélo - 1 mois (15€)</option>
+                    <option value="veloY">Vélo - 1 an (150€)</option>
+                </optgroup>
+
+                <optgroup label="Location de Trotinette électrique">
+                    <option value="trottEW">Trotinette électrique - 1 semaine (6€)</option>
+                    <option value="trottEM">Trotinette électrique - 1 mois (25€)</option>
+                    <option value="trottEY">Trotinette électrique - 1 an (250€)</option>
+                </optgroup>
+
+                <optgroup label="Location de Vélo électrique">
+                    <option value="veloEW">Vélo électrique - 1 semaine (14€)</option>
+                    <option value="veloEM">Vélo électrique - 1 mois (55€)</option>
+                    <option value="veloEY">Vélo électrique - 1 an (550€)</option>
+                </optgroup>
+            
+                <optgroup label="Location de Voiture électrique">
+                    <option value="4-1">Voiture électrique - 1 semaine (25€)</option>
+                    <option value="4-6">Voiture électrique - 1 mois (100€)</option>
+                    <option value="4-12">Voiture électrique - 1 an (1000€)</option>
+                </optgroup>
+            </select>
+    
+            <label for="raison">Pourquoi vouloir ce service :</label>
+            <input type="text" name="raison" placeholder="Ecrivez vos motivations" required>
+    
+            <label for="transport">Comment allez-vous au travail en ce moment :</label>
+            <input type="text" name="transport" placeholder="Ecrivez votre situation actuelle" required>
+    
+            <label for="rajout">Avez-vous quelque chose à rajoute ?</label>
+            <input type="text" name="rajout" placeholder="Ecrivez ici" required>
+    
+            <button type="submit">S'inscrire au service</button>
+        
+        </form>
+
+        <p><a href="contact.html">Problème d'adhésion ?</a></p>
+        
+    </main>
+
+    <!--Pied de page-->
+    <footer>
+
+        <!--Menu pour naviguer sur différentes pages-->
+        <ul>
+            <li><a href="https://www.nintendo.fr/Mentions-legales/Mentions-legales-757082.html">Mentions légales</a></li>
+            <li><a href="locations.html">Locations disponible</a></li>
+            <li><a href="https://www.nintendo.fr/Societe/Rapport-de-Responsabilite-Sociale-d-Entreprise/Rapport-de-Responsabilite-Sociale-d-Entreprise-625944.html">RSE</a></li>
+            <li><a href="equipe.html">Equipe du projet</a></li>
+            <li><a href="plan.html">Plan du site</a></li>
+            <li><a href="contacter.html">Contacter</a></li>
+        </ul>
+        
+        <!--Logos Nintendo/eNintendo-->
+        <div>
+            <a href="https://www.nintendo.fr/"><img src="img/footer_LogoNintendo.png" alt="Logo Nintendo"></a>
+            <a href="index.html"><img src="img/headerfooter_eNintendo.png" alt="Logo eNintendo"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+nav {
+    position: sticky; /*L'élément se colle à la bordure de la page*/
+    top: 0; /*L'élément se bloque à la bordure de la page à 0pixel de haut*/
+    background-color: rgb(23, 236, 126); /*Fond vert clair*/
+    z-index: 100; /*Survol au dessus des éléments*/
+}
+
+nav ul {
+    display: flex; /*Element en flex pour que les éléments soit collés sur une ligne*/
+    justify-content: flex-start; /*Element mis sur la gauche*/
+    padding: 10px; /*Se colle pas sur les bordures*/
+}
+
+nav ul li {
+    margin-right: 1em; /*Marge de 1em à droite*/
+}
+
+nav a:hover {
+    color: #4CAF50; /*Texte devient vert au survol*/
+}
+
+nav a {
+    color:#fff; /*Couleur blanche auto pour les liens*/
+}

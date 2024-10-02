@@ -1,0 +1,48 @@
+/* -- Corps de la page -- */
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    text-align: center;
+    color: #333;
+}
+
+main form {
+    text-align: left;
+}
+
+main div {
+    margin-bottom: 20px;
+}
+
+main label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+main input,
+main textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+main button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}

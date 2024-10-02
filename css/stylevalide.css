@@ -1,0 +1,11 @@
+main {
+    background-color: #4CAF50; /* Couleur de fond du conteneur du message (vert ici) */
+    color: #fff; /* Couleur du texte du message */
+    border:double green 10px;
+    font-size:300%;
+    padding: 10px;
+    margin: 15% 5%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}

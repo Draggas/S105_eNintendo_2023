@@ -1,0 +1,154 @@
+<!--Identification du document en html + balise d'ouverture HTML avec définition de langue en français-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--Informations sur la page-->
+<head>
+
+    <!--Encodage des caractères-->
+    <meta charset="UTF-8">
+
+    <!--Affichage d'une icône pour le favicon de la page du site-->
+    <link rel="icon" href="img/eNintendoFavicon.png">
+
+    <!--Liaison des feuilles de style pour la page web-->
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/stylecompte.css">
+    
+    <!--Titre de la page (Afficher à côté du favicon)-->
+    <title>eNintendo - Connexion à votre compte</title>
+
+</head>
+
+<!--Corps de la page-->
+<body>
+
+    <!--En-tête de la page-->
+    <header>
+
+        <!--Affichage Logo eNintendo-->
+        <a href="index.html"><img src="img/headerfooter_eNintendo.png" alt="Logo eNintendo"></a>
+        
+        <!--Affichage du titre de la page-->
+        <h1 id="compteTitre">Compte</h1>
+
+        <!--Affichage des réseaux sociaux de eNintendo-->
+        <div>    
+            <a id="insta" href="https://www.instagram.com/econintendo/?hl=fr"><img src="img/header_instagram.png" alt="Logo Instagram"></a>
+            <a id="twitter" href="https://twitter.com/ecoMobileNintendo"><img src="img/header_twitter.png" alt="Logo Twitter"></a>
+            <a id="tiktok" href="https://www.tiktok.com/@eNintendo"><img src="img/header_tiktok.png" alt="Logo Tiktok"></a>
+            <a id="discord" href="https://discord.com/invite/enintendo"><img src="img/header_discord.png" alt="Logo Discord"></a>
+        </div>
+
+        <!--Affichage du bouton de connexion-->
+        <a href="compte.html"><button>Connexion</button></a>
+    </header>
+
+    <!--Menu de navigation de la page-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="locations.html">Locations disponible</a></li>
+            <li><a href="questionnaire.html">Questionnaire</a></li>
+            <li><a href="adhesion.html">Louer</a></li>
+            <li><a href="https://www.nintendo.fr/Societe/Rapport-de-Responsabilite-Sociale-d-Entreprise/Rapport-de-Responsabilite-Sociale-d-Entreprise-625944.html">RSE</a></li>
+            <li><a href="compte.html">Compte</a></li>
+            <li><a href="contacter.html">Contacter</a></li>
+        </ul>
+    </nav>
+
+    <!--Affichage principal de la page-->
+    <main id="compteMain">
+        
+        <input type="radio" id="volet1" name="volets" checked>
+        <div>
+            <h2>CONNEXION A VOTRE COMPTE</h2>
+
+            <form  action="compte_connecter.html" method="get">
+                <label for="identifiant">Identifiant ou Mail :</label>
+                <input type="text" name="identifiant" placeholder="ID reçu par mail ou le mail associé à votre compte" required>
+                <br>
+                <label for="connexion_mdp">Mot de passe :</label>
+                <input type="password" name="connexion_mdp" placeholder="Mot de passe de votre compte" required>
+                <br>
+                <label for="volet2">Pas encore inscrit?</label>
+                <label for="volet3">Mot de passe oublié?</label>
+                <br>
+                <button type="submit">Se connecter</button>
+            </form>
+
+        </div>
+
+        <input type="radio" id="volet2" name="volets">
+        <div>
+            <h2>INSCRIPTION</h2>
+
+            <form  action="compte_inscrire.html" method="get">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" placeholder="Entrez votre Nom (pas de caractère spécial, ni de chiffres)" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" placeholder="Entrez votre Prénom (pas de caractère spécial, ni de chiffres)" required>
+
+                <label for="dateDeNaissance">Date de naissance :</label>
+                <input type="date" name="dateDeNaissance" placeholder="Entrez votre date de naissance (Format : DD/MM/YYYY)" required>
+
+                <label for="inscription_mail">Mail :</label>
+                <input type="text" name="mail" placeholder="Entrez votre Mail (Ex : eNintendo@gmail.com)" required>
+
+                <label for="inscription_mdp">Mot de passe :</label>
+                <input type="password" name="inscription_mdp" placeholder="MotDePasse (Entre 6 et 12 caractères, Min 1 chiffre et 1 caractère spécial : * # !)" required>
+
+                <label for="confirmermdp">Confirmer le mot de passe :</label>
+                <input type="password" name="confirmermdp" placeholder="Identique au mot de passe mis au dessus" required>
+
+                <label for="volet1">Déjà inscrit?</label>
+                <br>
+                <button type="submit">S'inscrire</button>
+            </form>
+
+        </div>
+
+        <input type="radio" id="volet3" name="volets">
+        <div>
+            <h2>MOT DE PASSE OUBLIÉ</h2>
+
+            <form  action="compte_réinitialiser.html" method="get">
+                <label for="mdp_mail">Mail :</label>
+                <input type="email" name="mdp_mail" placeholder="Mettez le mail lié à votre compte" required>
+                <br>
+                <label for="volet1">Mot de passe retrouvé</label>
+                <br>
+                <button type="submit">Envoyer réinitialisation</button>
+            </form>
+
+        </div>
+    </main>
+
+    <!--Pied de page-->
+    <footer>
+
+        <!--Menu pour naviguer sur différentes pages-->
+        <ul>
+            <li><a href="https://www.nintendo.fr/Mentions-legales/Mentions-legales-757082.html">Mentions légales</a></li>
+            <li><a href="locations.html">Locations disponible</a></li>
+            <li><a href="https://www.nintendo.fr/Societe/Rapport-de-Responsabilite-Sociale-d-Entreprise/Rapport-de-Responsabilite-Sociale-d-Entreprise-625944.html">RSE</a></li>
+            <li><a href="equipe.html">Equipe du projet</a></li>
+            <li><a href="plan.html">Plan du site</a></li>
+            <li><a href="contacter.html">Contacter</a></li>
+        </ul>
+        
+        <!--Logos Nintendo/eNintendo-->
+        <div>
+            <a href="https://www.nintendo.fr/"><img src="img/footer_LogoNintendo.png" alt="Logo Nintendo"></a>
+            <a href="index.html"><img src="img/headerfooter_eNintendo.png" alt="Logo eNintendo"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

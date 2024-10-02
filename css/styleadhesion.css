@@ -1,0 +1,65 @@
+header h1 {
+    margin : auto 16%;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /*Dispose les éléments en colonne*/
+    align-items: center;
+    width: 75%; /*Prend 75% de la page en horizontal*/
+    margin: 5% auto; /* Centre le main à l'horizontal et met une marge de 50px à la verticale */
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 1%;
+}
+
+
+main h2 { /*Change la taille du h2 à 24px*/
+    font-size: 24px; 
+}
+
+main form { /*Met les éléments à l'intérieur du formulaire en colonne*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+main input, main select { /*Padding autour du input et du select de 10px*/
+    padding: 10px;
+}
+
+main label, main input, main select {
+    font-size: 16px; /* Taille du texte à 16px */
+    margin-bottom: 10px; /*En dessous du titre de ses éléments se met une marge de 10px*/
+}
+
+main p { /*Met une marge de 20px à l'horizontal*/
+    margin:20px 0; 
+}
+
+main a { /*Lien d'aide en bleu*/
+    color: #007BFF;
+}
+
+main a:hover { /*Lien souligné au survol*/
+    text-decoration: underline;
+}
+
+main button {
+    padding: 25px 20px; /* Padding 25px en horizontal 20px en vertical */
+    margin: 30px 0; /* Marge de 30px à l'horizontal*/
+    font-size: 16px; /* Ecriture de taille 16 à l'intérieur du bouton*/
+    cursor: pointer; /* Met le curseur comme si il clique sur quelque chose*/
+    border: none; /* Enlève la bordure solide */
+    border-style:double; /* Met en place la bordure double */
+    border-radius: 8px; /* Arrondi les pointes */
+}
+
+main button:hover {
+    background-color: #00b357; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+main {
+    padding-bottom: 35px;
+}
