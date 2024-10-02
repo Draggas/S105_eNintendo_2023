@@ -26,10 +26,6 @@ Pour aller sur le site web, ouvrez simplement le fichier [index.html](index.html
 
 ---
 
-Here's the English version of your `README.md` for the eNintendo project:
-
----
-
 Developed by Lucas De Jesus Teixeira, Nicolas Hamel, and Zyad Bendidi  
 Contacts: draggaspro@gmail.com, nicolashamel60800@gmail.com, zyad.bendidi@gmail.com
 
